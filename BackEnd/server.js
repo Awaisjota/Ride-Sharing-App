@@ -10,7 +10,7 @@ const app = express();
 // Allow frontend origin
 app.use(
   cors({
-    origin: ["https://havellyride.netlify.app/", "http://localhost:5173"], // remove trailing slash
+    origin: ["https://havellyride.netlify.app", "http://localhost:5173"], // remove trailing slash
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
